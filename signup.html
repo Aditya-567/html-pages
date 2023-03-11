@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Employee Information</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=600");
+      
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(4px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: black;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+    a:link {
+      color:red;
+      background-color: transparent;
+      text-decoration: none;
+      background-color: rgb(125, 217, 233);
+      
+    }
+    a:visited {
+      color: rgb(238, 14, 14);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(47, 237, 9);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: rgb(200, 231, 85);
+      background-color: aqua;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="bg-text">
+	<font color="white" size="4" style="font-family: avenir">
+
+		<h1 style="font-size:60px;color: aliceblue;background-color: black;border:rgb(139, 6, 6); border-width:5px; border-style:solid">Registration</h1>
+
+		<body bgcolor="lightgrey">
+
+			<form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+
+				<button type="submit" formaction="/getemp" style="background: rgb(241, 4, 4); height: 45px; width: 200px; color:black; font:oblique;">USER INFORMATION</button><br><br>
+
+		  		User ID:<input style="height:25px;font-size:14pt; color:black;" type="number" name="emp_id" autofocus size="100"><br><br>
+
+		  		First Name:<input style="height:25px;font-size:14pt;color:black;" type="text" name="first_name" ><br><br>
+
+		  		Last Name:<input style="height:25px;font-size:14pt;color:black;" type="text" name="last_name"><br><br>
+
+		  		Address:<input style="height:25px;font-size:14pt;color:black;" type="text" name="pri_skill"><br><br>
+
+		  		Location:<input style="height:25px;font-size:14pt;color:black;" type="text" name="location"><br><br>
+
+		  		Document: <input type=file name="emp_image_file" style="height:25px;font-size:15pt;color:rgb(250, 245, 245);"> <br><br>
+
+		  		<button type="submit" style="background: rgb(247, 3, 3); height: 30px; width: 150px; color: white; size: 4; font:oblique;">REGISTAR</button>
+
+			</form>
+<a href="/about">About Us</a>
+		</body>
+
+	</font>
+</div>
+</body>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://t3.ftcdn.net/jpg/02/64/92/28/360_F_264922838_NErJEovZiP9MTa49apqL1Vs3f88ZT8Dg.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+a:link {
+  color:red;
+  background-color: transparent;
+  text-decoration: none;
+  background-color: rgb(125, 217, 233);
+  
+}
+a:visited {
+  color: rgb(238, 14, 14);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(47, 237, 9);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(200, 231, 85);
+  background-color: aqua;
+  text-decoration: underline;
+}
+input[type=text], input[type=password] {
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 10%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+</style>
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<fieldset>
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="https://img.freepik.com/free-icon/padlock_318-790509.jpg?size=338&ext=jpg&ga=GA1.2.981024630.1678559298&semt=ais" alt="Avatar" class="avatar">
+  </div>
+    Username:<input type="text" placeholder="Enter Username" name="uname" required><br><br>
+    Password:<input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+    <button type="submit">Login</button><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <div class="footer">
+      <h5>Forget Password..<a href="#" target="_blank">Reset Password</a></h5>
+			<h5>New here..<a href="" target="_blank">Sign Up</a></h5>
+			</div>
+    </fieldset>
+</div>
+</body>
+</html>
